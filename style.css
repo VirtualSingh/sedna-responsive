@@ -510,6 +510,7 @@ footer {
 
 /* ------media-queries------ */
 
+/* tablet */
 @media only screen and (max-width: 768px) {
   html {
     font-size: 50%;
@@ -681,5 +682,15 @@ footer {
     padding-top: 12.7rem;
     height: 100%;
     padding-left: 4.5%;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 425px) {
+  .ipad-air {
+    bottom: -10%;
+  }
+  .iphone {
+    bottom: -5%;
   }
 }
