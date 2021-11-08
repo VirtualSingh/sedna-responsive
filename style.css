@@ -640,7 +640,6 @@ footer {
 @media only screen and (min-width: 769px) {
   .section-featured {
     height: 100vh;
-    max-height: 48%;
     padding-top: 7.375%;
   }
   .featured__content-wrapper {
