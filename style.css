@@ -60,6 +60,7 @@ p {
   color: var(--color-secondary);
   font-size: 4rem;
   vertical-align: top;
+  width: 4rem;
 }
 
 /* ---------- */
@@ -139,6 +140,7 @@ header .container {
   text-transform: uppercase;
   border-radius: 4rem;
   font-size: 1.3rem;
+  transition: all 0.3s;
 }
 .btn:not(:last-child) {
   margin-right: 2rem;
@@ -147,6 +149,10 @@ header .container {
   color: #fff;
   padding: 1.8rem 3.6rem;
   background: var(--color-secondary);
+}
+.btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 5px 5px rgba(38, 43, 57, 0.3);
 }
 .btn__secondary {
   color: var(--color-secondary);
@@ -165,7 +171,7 @@ header .container {
 }
 
 .keypoint__grid-col .keypoint__content {
-  width: 80%;
+  width: calc(100% - 7rem);
   display: inline-block;
   margin-left: 2rem;
   text-align: left;
@@ -212,6 +218,7 @@ header .container {
 /* --section-sketch --*/
 .section-sketch {
   padding: 11.4rem 0 14.4rem 17%;
+  /* padding: 11.4rem 0 14.4rem; */
 }
 .section-sketch img {
   width: 55%;
@@ -418,10 +425,13 @@ header .container {
   border: none;
   border-left: 1px solid #e6e9ea;
 }
+.input:focus {
+  outline: 2px solid var(--color-secondary);
+  border-radius: 5px;
+}
 .input-group .fa-icon {
   font-size: 3rem;
   color: var(--color-secondary);
-  padding: 0 2rem;
   vertical-align: middle;
 }
 
@@ -651,7 +661,7 @@ footer {
     overflow: auto;
   }
   .featured__list .featured__content {
-    width: 80%;
+    width: calc(100% - 7rem);
     float: right;
   }
   /* --- */
